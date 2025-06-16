@@ -36,7 +36,7 @@
         </button>
     </form>
     <div class="flex items-center grow justify-end gap-4">
-        <div class="text-sm text-slate-700 mobile:hidden">Hi, {{ $admin->name }}!</div>
+        <div class="text-sm text-slate-700 mobile:hidden">Hai, {{ $admin->name }}!</div>
         <a href="{{ route('admin.logout') }}" class="bg-red-500 text-white text-sm font-medium p-2 px-5 rounded-full">
             Logout
         </a>

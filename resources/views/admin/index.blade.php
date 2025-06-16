@@ -28,6 +28,15 @@
     </div>
 </div>
 
+@if ($products->count() == 0)
+    <div class="flex flex-col items-center gap-4 mt-10">
+        <h3 class="text-xl text-slate-600">Belum ada data produk</h3>
+        <a href="{{ route('product.create') }}" class="p-4 px-6 bg-primary text-white text-sm font-bold rounded-full">
+            Tambahkan Produk
+        </a>
+    </div>
+@endif
+
 <div class="grid grid-cols-5 mobile:grid-cols-2 gap-6 mobile:gap-4 mt-8">
     @foreach ($products as $product)
         <div class="flex flex-col gap-1 group relative">

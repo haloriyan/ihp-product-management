@@ -14,8 +14,10 @@ You don't have to run `composer install` or anything install because it has been
 ```
 composer install &&
 cp .env.example .env &&
-php artisan migrate:fresh &&
+php artisan key:generate &&
+php artisan migrate &&
 php artisan db:seed --class AdminSeeder &&
 php artisan db:seed --class CategorySeeder &&
 php artisan storage:link &&
 composer dump-autoload
+```
