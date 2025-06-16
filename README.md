@@ -21,3 +21,9 @@ php artisan db:seed --class CategorySeeder &&
 php artisan storage:link &&
 composer dump-autoload
 ```
+
+Login credentials :
+```
+username : admin
+password : admin123
+```
